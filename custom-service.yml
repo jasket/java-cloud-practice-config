@@ -3,7 +3,4 @@ spring:
     name: custom-service
 
 server:
-  port: 9000
-
-custom:
-  prop: "Custom Property"
+  port: 5000
