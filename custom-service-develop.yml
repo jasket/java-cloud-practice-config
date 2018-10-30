@@ -6,4 +6,4 @@ server:
   port: 9000
 
 custom:
-  prop: "development custom prop"
+  prop: "development custom prop (changed)"
