@@ -11,7 +11,8 @@ management:
   endpoints:
     web:
       base-path: /manage
-      health: healthcheck
+      exposure:
+        include: "*"
 
 custom:
   prop: "development custom prop"
