@@ -5,5 +5,13 @@ spring:
 server:
   port: 9000
 
+management:
+  server:
+    port: 8081
+  endpoints:
+    web:
+      base-path: /manage
+      health: healthcheck
+
 custom:
-  prop: "development custom prop (changed)"
+  prop: "development custom prop"
