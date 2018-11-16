@@ -2,9 +2,6 @@ spring:
   application:
     name: custom-service
 
-server:
-  port: 9000
-
 management:
   server:
     port: 7000
@@ -17,7 +14,7 @@ management:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:7500/eureka/
+      defaultZone: http://127.0.0.1:7500/eureka/
 
 custom:
   prop: "development custom prop (changed)"
