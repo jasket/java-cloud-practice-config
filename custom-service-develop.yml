@@ -14,5 +14,10 @@ management:
       exposure:
         include: "*"
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7500/eureka/
+
 custom:
   prop: "development custom prop (changed)"
