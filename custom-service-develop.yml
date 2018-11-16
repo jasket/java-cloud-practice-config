@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: custom-service
+
 server:
   port: 9000
 
