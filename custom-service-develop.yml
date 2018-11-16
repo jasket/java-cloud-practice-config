@@ -15,6 +15,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://127.0.0.1:7500/eureka/
+  instance:
+    status-page-url-path: /manage/info
+    instance-id: ${spring.application.name}:${server.port}:${spring.application.instance_id:${random.value}}
 
 custom:
   prop: "development custom prop (changed)"
