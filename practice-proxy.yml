@@ -3,4 +3,4 @@ spring:
     name: practice-proxy
 
 server:
-  port: 7500
+  port: 7600
