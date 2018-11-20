@@ -22,4 +22,4 @@ eureka:
     status-page-url-path: /manage/info
 
 custom:
-  prop: "development custom prop"
+  prop: "development custom prop (change)"
