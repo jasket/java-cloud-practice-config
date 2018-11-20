@@ -3,7 +3,7 @@ spring:
     name: registry-service
 
 server:
-  port: 7500
+  port: ${PORT}
 
 eureka:
   client:
