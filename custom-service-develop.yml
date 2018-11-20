@@ -5,18 +5,8 @@ spring:
 management:
   server:
     port: 7000
-  endpoints:
-    web:
-      base-path: /manage
-      exposure:
-        include: "*"
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://127.0.0.1:7500/eureka/
-  instance:
-    status-page-url-path: /manage/info
-
-custom:
-  prop: "development custom prop (changed)"

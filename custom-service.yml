@@ -3,4 +3,23 @@ spring:
     name: custom-service
 
 server:
-  port: 9000
+  port: ${PORT}
+
+management:
+  server:
+    port: ${MANAGE_PORT}
+  endpoints:
+    web:
+      base-path: /manage
+      exposure:
+        include: "*"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER}
+  instance:
+    status-page-url-path: /manage/info
+
+custom:
+  prop: "development custom prop (changed)"
